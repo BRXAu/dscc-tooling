@@ -96,6 +96,12 @@ export const configSchema = {
       items: {
         $ref: "#/definitions/interactionElement"
       }
+    },
+    features: {
+      type: "object",
+      properties: {
+        enableComparisonDateRange: { type: "boolean" }
+      }
     }
   },
   definitions: {
@@ -241,7 +247,7 @@ export const configSchema = {
           type: "string",
           enum: ["FONT_SIZE"]
         },
-        defaultValue: { type: "string" }
+        defaultValue: { type: ["number", "string"] }
       }
     },
     fontFamily: {
@@ -353,7 +359,7 @@ export const configSchema = {
           type: "string",
           enum: ["BORDER_RADIUS"]
         },
-        defaultValue: { type: "string" }
+        defaultValue: { type: ["number", "string"] }
       }
     },
     interval: {
