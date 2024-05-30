@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import * as validate from '@google/dscc-validation';
+import * as validate from '@brxau/dscc-validation';
 import * as Ajv from 'ajv';
 import {existsSync, PathLike, readFileSync} from 'fs';
 import {DeploymentChoices, VizArgs} from '../args';
